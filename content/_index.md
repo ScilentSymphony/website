@@ -2,8 +2,13 @@
 title: Homepage
 ---
 
-# ScilentSymphony
+# Aspen Da'nee
 
+*Aspen Da’nee is the home for visions, stories, and creations. I hope to be the conduit of your creative endeavors.*
+
+All of my projects, profiles, and progress will be stored here. 
+
+## ScilentSymphony
 ## *AN ALL IN ONE PRODUCER CRAFTING SOUNDSCAPES,DEFINING SOUND*
 
 ScilentSymphony is an avant-garde music producer and artist known for crafting profoundly unconventional compositions that transcend the boundaries of traditional genres. With a deep-rooted passion for storytelling, he weaves intricate sonic tapestries that evoke raw emotions and challenge listeners to experience music as an audacious, eccentric, and surreal journey.
@@ -16,6 +21,7 @@ Whether you're diving into immersive soundscapes or seeking inspiration for your
 
 {{< image-gallery urls="https://ec-tmp.nyc3.digitaloceanspaces.com/IMG_8432.jpg,https://ec-tmp.nyc3.digitaloceanspaces.com/IMG_7506.jpg,https://ec-tmp.nyc3.digitaloceanspaces.com/IMG_4801.jpg,https://ec-tmp.nyc3.digitaloceanspaces.com/IMG_4627.jpg" >}}
 
-[![Light Streaks from Traffic Light](https://aspendanee.nyc3.digitaloceanspaces.com/Images/LandingPage/IMG_8840%20thumb.webp)](https://aspendanee.nyc3.digitaloceanspaces.com/Images/LandingPage/IMG_8840.png)
+
+
 
 {{< mp3 src="https://aspendanee.nyc3.digitaloceanspaces.com/Images/LandingPage/transition%2014.mp3" >}}

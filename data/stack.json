@@ -1,22 +1,22 @@
 [
   {
-    "name": "Bear Notes",
-    "description": "Quick note taking application on Mac for writing down instant thoughts",
-    "link": "https://bear.app/",
-    "icon": "https://blog.bear.app/wp-content/uploads/2018/10/bear-icon.png",
+    "name": "Logic Pro",
+    "description": "A Digital Audio Workspace used by professionals around the world",
+    "link": "https://www.apple.com/logic-pro/",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/1/10/Logicpro-icon.png",
+    "tag": "MusicProduction"
+  },
+  {
+    "name": "Obsidian",
+    "description": "One of the greatest notetaking apps ever created",
+    "link": "https://obsidian.md",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/1/10/2023_Obsidian_logo.svg",
     "tag": "Productivity"
   },
   {
-    "name": "Cloudflare",
-    "description": "Place for all my domains on the internet",
-    "link": "https://cloudflare.com",
-    "icon": "",
-    "tag": "Webdev"
-  },
-  {
-    "name": "Vercel",
-    "description": "Hosts frontend of projects including this website",
-    "link": "https://vercel.com/",
+    "name": "The Focus Project",
+    "description": "An amazing tracking app built for mac and soon coming for windows.",
+    "link": "https://thefocusproject.com/",
     "icon": "",
     "tag": ""
   },
@@ -28,11 +28,11 @@
     "tag": "Webdev"
   },
   {
-    "name": "iTerm",
-    "description": "A definitely more functional terminal for Mac",
-    "link": "https://iterm2.com/",
-    "icon": "https://icons.iconarchive.com/icons/froyoshark/enkel/256/iTerm-icon.png",
-    "tag": "Productivity"
+    "name": "Discord",
+    "description": "The communication app for gaming and niche topics with Gen Z & Alpha",
+    "link": "https://discord.com/",
+    "icon": "",
+    "tag": "SocialMedia"
   },
   {
     "name": "Figma",
