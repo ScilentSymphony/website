@@ -19,5 +19,3 @@ Whether you're diving into immersive soundscapes or seeking inspiration for your
 [![Light Streaks from Traffic Light](https://aspendanee.nyc3.digitaloceanspaces.com/Images/LandingPage/IMG_8840%20thumb.webp)](https://aspendanee.nyc3.digitaloceanspaces.com/Images/LandingPage/IMG_8840.png)
 
 {{< mp3 src="https://aspendanee.nyc3.digitaloceanspaces.com/Images/LandingPage/transition%2014.mp3" >}}
-
-<hr />
