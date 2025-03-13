@@ -14,16 +14,10 @@ Beyond the music, ScilentSymphony is committed to empowering bedroom producers t
 
 Whether you're diving into immersive soundscapes or seeking inspiration for your own creative journey, ScilentSymphony invites you to experience music beyond the ordinary-where every note tells a story, and every track is an experiment in the unknown.
 
-{{< image-gallery gallery_dir="/images/landing-page" >}}
+{{< image-gallery urls="https://ec-tmp.nyc3.digitaloceanspaces.com/IMG_8432.jpg,https://ec-tmp.nyc3.digitaloceanspaces.com/IMG_7506.jpg,https://ec-tmp.nyc3.digitaloceanspaces.com/IMG_4801.jpg,https://ec-tmp.nyc3.digitaloceanspaces.com/IMG_4627.jpg" >}}
 
 [![Light Streaks from Traffic Light](https://aspendanee.nyc3.digitaloceanspaces.com/Images/LandingPage/IMG_8840%20thumb.webp)](https://aspendanee.nyc3.digitaloceanspaces.com/Images/LandingPage/IMG_8840.png)
 
 {{< mp3 src="https://aspendanee.nyc3.digitaloceanspaces.com/Images/LandingPage/transition%2014.mp3" >}}
 
 <hr />
-
-Building your own digital garden is not a fad. It's a necessity. Tools like Roam Research, Obsidian and Notion provided means to interlink content, even over a graphical way. Still not sold? Check out [The Digital Garden](https://dev.to/jbranchaud/the-digital-garden-l10) by Josh Branchaud.
-
-Start collecting your ideas 💡, curate thought provoking & interesting content 💬&nbsp; and learn.
-
-→ [Go to Documentation](/articles)
