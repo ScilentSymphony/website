@@ -1,3 +1,4 @@
 ---
 title: Essays
+layout: single
 ---
