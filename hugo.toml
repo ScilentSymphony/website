@@ -1,6 +1,6 @@
 baseURL = "https://aspendan.ee/"
 languageCode = "en-us"
-title = "Personal Digital Garden"
+title = "Aspen Da'nee"
 theme = "digitalgarden"
 
 googleAnalytics = "UA-PROPERTY_ID"
@@ -28,29 +28,65 @@ googleAnalytics = "UA-PROPERTY_ID"
   url = '/'
   weight = 1
 [[menu.main]]
-  name = 'Content'
+  name = 'ScilentSymphony'
+  url = '/scilentsymphony'
+  weight = 1.5
+[[menu.main]]
+  name = 'Art'
   params.header = true
   weight = 2
 [[menu.main]]
-  name = 'Articles'
-  url = '/articles'
+  name = 'Photography'
+  url = '/photography'
   weight = 3
 [[menu.main]]
-  name = 'Portfolio'
-  url = '/portfolio'
+  name = 'Videography'
+  url = '/videography'
   weight = 4
 [[menu.main]]
-  name = 'Stack'
-  url = '/stack'
+  name = 'Animation'
+  url = '/animation'
   weight = 5
 [[menu.main]]
-  name = 'Links'
+  name = 'Writing'
   params.header = true
   weight = 6
 [[menu.main]]
-  name = 'Polywork'
-  url = 'https://polywork.com'
+  name = 'Thesis'
+  url = '/thesis'
   weight = 7
+[[menu.main]]
+  name = 'Essays'
+  url = '/essays'
+  weight = 8
+[[menu.main]]
+  name = 'Music Reviews'
+  url = '/articles'
+  weight = 9
+[[menu.main]]
+  name = 'Community'
+  params.header = true
+  weight = 10
+[[menu.main]]
+  name = 'The Study Server'
+  url = '/studyserver'
+  weight = 11
+[[menu.main]]
+  name = 'CreateCo'
+  url = '/createco'
+  weight = 12
+[[menu.main]]
+  name = 'Stack'
+  url = '/stack'
+  weight = 13
+[[menu.main]]
+  name = 'Links'
+  params.header = true
+  weight = 14
+[[menu.main]]
+  name = 'Linktree'
+  url = 'https://linktr.ee/scilentsymphony'
+  weight = 15
 
 [[menu.social]]
   name = 'Twitter'
@@ -82,7 +118,7 @@ googleAnalytics = "UA-PROPERTY_ID"
   weight = 7
 [[menu.social]]
   name = 'Email'
-  url = 'mailto:user@example.org'
+  url = 'mailto:zaki@aspendan.ee'
   weight = 8
 [[menu.social]]
   name = 'RSS'
