@@ -1,3 +1,4 @@
 ---
 title: ScilentSymphony
+layout: single
 ---
