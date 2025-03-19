@@ -32,6 +32,10 @@ googleAnalytics = "UA-PROPERTY_ID"
   url = '/scilentsymphony'
   weight = 1.5
 [[menu.main]]
+  name = 'Landing Page'
+  url = '/landingpage'
+  weight = 1.5
+[[menu.main]]
   name = 'Art'
   params.header = true
   weight = 2
