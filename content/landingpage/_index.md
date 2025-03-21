@@ -5,15 +5,13 @@ layout: single
 
 # Aspen Da’nee: A Home for Boundless Creativity
 
-  
-
 Zaki Hutchinson (artist name: ScilentSymphony) is a music producer, writer, and creative entrepreneur dedicated to pushing artistic boundaries. With a deep-rooted passion for storytelling and sonic experimentation, ScilentSymphony crafts intricate compositions that blur the lines between genres, emphasizing raw emotion, unconventional textures, and self-sampled soundscapes.
 
   
 
 Beyond music, Zaki is an advocate for independent artists, fostering a community that empowers bedroom producers to embrace their individuality. With a background in research, writing, and interdisciplinary exploration, their work extends into professional consulting, artistic mentorship, and multimedia storytelling.
 
-  
+![Clouds](https://aspendanee.nyc3.digitaloceanspaces.com/Images/LandingPage/IMG_8840%20thumb.webp)
 
 Notable Achievements:
 
@@ -25,7 +23,7 @@ Notable Achievements:
 
 - Founder of a growing creative ecosystem that bridges music, writing, and consulting.
 
-  
+- - -
 
 ## Testimonials
 
@@ -35,7 +33,7 @@ Notable Achievements:
 
   
 
-– GrevusAnjl, Artist & Music Reviewer
+– [GrevusAnjl](https://soundcloud.com/grevusanjl), Artist & Music Reviewer
 
   
 
@@ -43,29 +41,25 @@ Notable Achievements:
 
   
 
-– Mystique Wind, Musician
+– [Mystique Wind](https://soundcloud.com/mystique_wind), Musician
 
-  
+> Your music is really weird, and that's pretty cool.
 
-(You need to gather educator/professional testimonials. Ask professors, musicians, or industry professionals.)
+– [Mark Bole](https://www.linkedin.com/in/markbole1), Entrepreneurship Instructor I – Florida Gulf Coast University
 
-• [Professor’s Name], [Title] – Florida Gulf Coast University
+<!-- • [Musician’s Name], [Professional Role] • [Industry Mentor], [Affiliation] -->
 
-• [Musician’s Name], [Professional Role]
-
-• [Industry Mentor], [Affiliation]
-
-  
+![Light Trails](https://aspendanee.nyc3.digitaloceanspaces.com/Images/LandingPage/IMG_8859.webp)
 
 ## Music Highlights
 
   
 
-🎵 [Nothing New (Remix Album)] – (Self-sampled compositions, available on Spotify, Bandcamp, etc.)
+🎵 Nothing New (Remix Album) – Self-sampled compositions, available soon on Spotify, Bandcamp, etc.
 
-🎵 [Piano Improvisations Vol. 1] – (Exploratory jazz improvisations)
+🎵 [Piano Improvisations Vol. 1](https://distrokid.com/hyperfollow/scilentsymphony/piano-improvisations-vol-1-minor) – Exploratory jazz improvisations
 
-🎵 [Experimental Soundscapes]
+🎵 [Experimental Soundscapes](https://distrokid.com/hyperfollow/scilentsymphony/future-2) – 
 
 [Insert embedded SoundCloud, Bandcamp, or Spotify players]
 
@@ -79,37 +73,19 @@ Notable Achievements:
 
 - 🎥 Artist Interview (TBA)
 
-  
-
-[Insert YouTube or Vimeo embeds]
-
-  
-
 ## Gallery
 
   
 
-{{< image-gallery urls="https://aspendanee.nyc3.digitaloceanspaces.com/Images/LandingPage/Headshot.jpg,https://aspendanee.nyc3.digitaloceanspaces.com/Images/LandingPage/NewEra.jpg,https://aspendanee.nyc3.digitaloceanspaces.com/Images/LandingPage/TheUnderground.jpg,https://aspendanee.nyc3.digitaloceanspaces.com/Images/LandingPage/ICC.jpg,https://aspendanee.nyc3.digitaloceanspaces.com/Images/LandingPage/Phantasmagoria.jpg" >}}
+{{< image-gallery urls="https://aspendanee.nyc3.digitaloceanspaces.com/Images/LandingPage/Headshot.jpg,https://aspendanee.nyc3.digitaloceanspaces.com/Images/LandingPage/NewEra.jpg,https://aspendanee.nyc3.digitaloceanspaces.com/Images/LandingPage/TheUnderground.jpg,https://aspendanee.nyc3.digitaloceanspaces.com/Images/LandingPage/ICC.jpg,https://aspendanee.nyc3.digitaloceanspaces.com/Images/LandingPage/Phantasmagoria.jpg,https://aspendanee.nyc3.digitaloceanspaces.com/Images/LandingPage/Logo.webp" >}}
 
   
 
-📸 Press Photos: [Download Link]
-
-  
-
-📸 Album Covers & Visual Art: [Gallery Section]
-
-  
-
-## Latest Release: Nothing New
+## Latest Release: Nothing New (Coming Soon)
 
   
 
 Concept: Nothing New is a remix album composed entirely of self-sampled music, breaking conventional production methods by reconstructing past works into something entirely new. It challenges the boundaries of sound manipulation and storytelling through music.
-
-  
-
-Key Features:
 
 • 100% self-sampled compositions
 
@@ -117,33 +93,23 @@ Key Features:
 
 • A deep, immersive listening experience
 
-  
-
-[Insert album cover, streaming links, and brief track descriptions.]
-
-  
-
 - - -
 
   
 
 For press inquiries, collaborations, or interviews, please contact:
 
-  
-
-📧 Email: [Your Professional Email]
-
-🌐 Website: [Aspen Da’nee URL]
+📧 Email: zaki@aspendan.ee
 
 📱 Socials:
 
-• [Instagram]
+• [Instagram](https://www.instagram.com/scilentsymphony/)
 
-• [Twitter/X]
+• [Twitter/X]https://x.com/ScilentSymphony
 
-• [YouTube]
+• [YouTube](https://www.youtube.com/channel/UCXvTUpGL0ytl5dnAEKI6Y3Q)
 
-• [Spotify/Bandcamp]
+• [Linktree](https://linktr.ee/scilentsymphony)
 
   
 
