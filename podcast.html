@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  ╔══════════════════════════════════════════════════════════════════════════════╗
+  ║                           ZE PODCAST PAGE                                     ║
+  ║                    REFACTORED TO USE PORTFOLIO CSS                            ║
+  ╚══════════════════════════════════════════════════════════════════════════════╝
+
+  TECH STACK (Updated):
+  - Portfolio CSS Architecture (style.css + components.css + podcast.css)
+  - No external frameworks (Tailwind removed for performance)
+  - Consistent with portfolio design system
+  - Custom podcast-specific styles in podcast.css
+
+  PERFORMANCE BENEFITS:
+  - Removed ~100kb+ Tailwind CDN dependency
+  - Uses optimized, minified CSS from portfolio
+  - Leverages existing CSS variables for consistency
+  - Better caching (same CSS files across site)
+
+  See PERFORMANCE-BUDGET.md for performance targets.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ze Podcast - Zaki's Portfolio</title>
+    <meta name="description" content="Improvised, minimal-edit commentary with receipts. Dissecting rhetoric, media, and communication.">
+    <link rel="canonical" href="https://scilentsymphony.github.io/portfolio/podcast.html">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Portfolio CSS Architecture -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/podcast.css">
+</head>
+<body>
+
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Slide-out Menu -->
+    <div class="slide-menu-overlay" aria-hidden="true"></div>
+    <nav id="mobile-slide-menu" class="slide-menu" aria-label="Mobile navigation" aria-hidden="true">
+        <div class="slide-menu-header">
+            <span class="slide-menu-logo">ZAKI</span>
+            <button class="slide-menu-close" data-menu-initial="true" aria-label="Close navigation menu">&times;</button>
+        </div>
+        <ul class="slide-menu-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="tech.html">Tech</a></li>
+            <li><a href="podcast.html" class="active">Podcast</a></li>
+            <li><a href="knowledge/">Knowledge</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Desktop Navigation -->
+    <nav id="mainNav" class="nav-expanded" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">ZAKI<span class="nav-shape" data-page="podcast">●</span></a>
+            <ul class="nav-links">
+                <li><a href="research.html">RESEARCH</a></li>
+                <li><a href="music.html">MUSIC</a></li>
+                <li><a href="tech.html">TECH</a></li>
+                <li><a href="podcast.html" style="color: var(--accent-gold);">PODCAST</a></li>
+                <li><a href="knowledge/">KNOWLEDGE</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <!-- Mobile Hamburger Menu -->
+            <button class="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-slide-menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <main style="padding-top: 80px;">
+
+        <!-- Hero Section -->
+        <header id="main-content" class="hero" style="min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 5rem 1.5rem; position: relative;">
+            <!-- Background Gradients -->
+            <div class="podcast-gradient-gold"></div>
+            <div class="podcast-gradient-purple"></div>
+
+            <div style="text-align: center; max-width: 80rem; margin: 0 auto; position: relative; z-index: 10;">
+                <div style="display: flex; justify-content: center; margin-bottom: 1.5rem;">
+                    <a href="contact.html" class="status-badge">Available for Consulting & Commissions</a>
+                </div>
+
+                <h1 class="podcast-hero-title">
+                    How ideas <br/>
+                    <span class="podcast-hero-title-italic">persuade.</span>
+                </h1>
+
+                <p class="podcast-hero-text" style="margin: 2rem auto;">
+                    Metacritical analysis for the modern age. We dissect rhetoric, media, and culture through improvised commentary and rigorous receipt-checking.
+                </p>
+
+                <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; margin-top: 2rem;">
+                    <a href="#episodes" class="btn-podcast-primary">
+                        <span style="position: relative; z-index: 10;">Watch Latest Deep Dive ▶</span>
+                        <div class="btn-shine"></div>
+                    </a>
+                    <a href="#philosophy" class="btn-podcast-secondary">
+                        <span style="position: relative; z-index: 10;">Read The Manifesto</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <span class="scroll-indicator-text">Scroll</span>
+                <div class="scroll-indicator-line"></div>
+            </div>
+        </header>
+
+        <!-- Episodes Section -->
+        <section id="episodes" class="podcast-section">
+            <div class="podcast-container">
+                <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 4rem; flex-wrap: wrap; gap: 1rem;">
+                    <div>
+                        <h2 class="podcast-section-title">Selected Work</h2>
+                        <p class="podcast-section-subtitle">Deep dives, autopsies, and technical explorations.</p>
+                    </div>
+                    <a href="https://www.youtube.com/@zakih.8815" class="animated-underline" style="color: var(--accent-gold); display: none;">
+                        View Full Archive →
+                    </a>
+                </div>
+
+                <div class="podcast-grid">
+                    <!-- Large Card -->
+                    <div class="spotlight-card podcast-grid-large">
+                        <a href="https://www.youtube.com/watch?v=-uVYLpKZn1c" target="_blank" class="episode-card">
+                            <div class="episode-card-image-wrapper">
+                                <img src="https://img.youtube.com/vi/-uVYLpKZn1c/maxresdefault.jpg" alt="Brother I am Troubled" class="episode-card-image">
+                                <div class="episode-card-overlay"></div>
+                                <div class="episode-card-meta">
+                                    <div class="episode-play-btn">▶</div>
+                                    <span class="episode-duration">28:07</span>
+                                </div>
+                            </div>
+                            <div class="episode-card-content">
+                                <div class="episode-tags">
+                                    <span class="episode-tag">Analysis</span>
+                                    <span class="episode-tag">Critique</span>
+                                </div>
+                                <h3 class="episode-title">Media Deep Dive: Brother, I am Troubled</h3>
+                                <p class="episode-description">A metacritical analysis of Burial Goods' masterpiece. We dissect how allegory weaponizes irony and how rhetoric becomes a form of resistance.</p>
+                                <div class="episode-cta">
+                                    Watch Video <span class="episode-cta-arrow">→</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Standard Card 1 -->
+                    <div class="spotlight-card">
+                        <a href="https://www.youtube.com/watch?v=oHAZxVkhpGg" target="_blank" class="episode-card">
+                            <div class="episode-card-image-wrapper">
+                                <img src="https://img.youtube.com/vi/oHAZxVkhpGg/maxresdefault.jpg" alt="Thesis Defense" class="episode-card-image">
+                                <div class="episode-card-overlay"></div>
+                                <div class="episode-card-meta">
+                                    <div class="episode-play-btn">▶</div>
+                                    <span class="episode-duration">23:38</span>
+                                </div>
+                            </div>
+                            <div class="episode-card-content">
+                                <div class="episode-tags">
+                                    <span class="episode-tag">Public Speaking</span>
+                                </div>
+                                <h3 class="episode-title">Self-Scrutiny: My Thesis Defense</h3>
+                                <p class="episode-description">Applying my own techniques in a high-stakes academic setting.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Standard Card 2 -->
+                    <div class="spotlight-card">
+                        <a href="https://www.youtube.com/watch?v=FIUiLgHuT2E" target="_blank" class="episode-card">
+                            <div class="episode-card-image-wrapper">
+                                <img src="https://img.youtube.com/vi/FIUiLgHuT2E/maxresdefault.jpg" alt="AI Website" class="episode-card-image">
+                                <div class="episode-card-overlay"></div>
+                                <div class="episode-card-meta">
+                                    <div class="episode-play-btn">▶</div>
+                                    <span class="episode-duration">15:30</span>
+                                </div>
+                            </div>
+                            <div class="episode-card-content">
+                                <div class="episode-tags">
+                                    <span class="episode-tag">Workflow</span>
+                                </div>
+                                <h3 class="episode-title">Building an AI Portfolio in 24h</h3>
+                                <p class="episode-description">Documenting the process of building this very site using Claude Code.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Info Card -->
+                    <div class="podcast-grid-info-card">
+                        <div style="position: absolute; inset: 0; background: url('https://www.transparenttextures.com/patterns/cubes.png'); opacity: 0.1; mix-blend-mode: multiply;"></div>
+                        <div style="position: relative; z-index: 10; color: #000; max-width: 32rem;">
+                            <h3 style="font-size: 1.875rem; font-family: var(--font-display); font-weight: 700; margin-bottom: 1rem;">The Media Autopsy</h3>
+                            <p style="font-weight: 500; opacity: 0.8; margin-bottom: 1.5rem;">Our signature format. 15 minutes. One artifact. We dismantle the claim, show the receipts, and offer a transferrable fix.</p>
+                            <button class="btn-podcast-primary" style="background: #000; color: var(--accent-gold);">
+                                Explore the Format →
+                            </button>
+                        </div>
+                        <div style="position: relative; z-index: 10; margin-top: 2rem; opacity: 0.2; font-size: 8rem;">✂</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Notebook Section -->
+        <section id="notebook" class="notebook-section">
+            <div class="podcast-container">
+                <div class="notebook-grid">
+                    <div style="display: flex; flex-direction: column; gap: 2rem;">
+                        <h2 class="podcast-section-title">The Notebook</h2>
+                        <p style="font-size: 1.125rem; color: rgba(232, 232, 232, 0.6); line-height: 1.6;">
+                            Thoughts that don't fit in a video. Essays on communication theory, quick rhetorical breakdowns, and updates from the lab.
+                        </p>
+
+                        <div class="newsletter-box">
+                            <div class="newsletter-badge">Newsletter</div>
+                            <h4 style="font-size: 1.25rem; font-family: var(--font-display); margin-bottom: 1rem; color: var(--text-primary);">Join the inner circle.</h4>
+                            <form action="https://scilent.substack.com/subscribe" method="post" target="_blank" class="newsletter-form">
+                                <input type="email" name="email" placeholder="Enter email address" required class="newsletter-input">
+                                <button type="submit" class="newsletter-button">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 2rem;">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+                            <span style="color: var(--accent-gold);">📖</span>
+                            <span style="font-family: var(--font-body); font-size: 0.875rem; color: var(--accent-gold); text-transform: uppercase; letter-spacing: 0.15em;">Latest Notes</span>
+                        </div>
+
+                        <!-- Note 1 -->
+                        <a href="https://scilent.substack.com/p/how-to-tell-if-a-ted-talk-is-actually" target="_blank" class="note-link">
+                            <div class="note-meta">
+                                <span>Nov 2025</span>
+                                <span class="note-dot"></span>
+                                <span>3 min</span>
+                            </div>
+                            <h4 class="note-title">How to Tell If a TED Talk Is Actually Teaching You</h4>
+                            <p class="note-excerpt">You finish watching. You feel smarter, inspired, maybe even moved. Two days later, you can't remember the main idea, let alone apply it.</p>
+                        </a>
+
+                        <!-- Note 2 -->
+                        <a href="https://scilent.substack.com/p/why-adding-more-evidence-makes-your" target="_blank" class="note-link">
+                            <div class="note-meta">
+                                <span>Oct 2025</span>
+                                <span class="note-dot"></span>
+                                <span>2 min</span>
+                            </div>
+                            <h4 class="note-title">Why Adding More Evidence Makes Your Point Weaker</h4>
+                            <p class="note-excerpt">You think five examples prove your case better than two. You're wrong. Every weak receipt you add lowers the average strength of your argument.</p>
+                        </a>
+
+                        <!-- Note 3 -->
+                        <a href="https://scilent.substack.com/p/the-receipts-are-in-autopsying-my" target="_blank" class="note-link">
+                            <div class="note-meta">
+                                <span>Oct 2025</span>
+                                <span class="note-dot"></span>
+                                <span>4 min</span>
+                            </div>
+                            <h4 class="note-title">The Receipts Are In: Autopsying My Own Thesis Defense</h4>
+                            <p class="note-excerpt">I've spent months dissecting TED talks and viral videos. Time to turn the lens on myself and see where I left value on the table.</p>
+                        </a>
+
+                        <a href="https://scilent.substack.com/" style="display: inline-block; margin-top: 2rem; font-size: 0.875rem; font-weight: 700; color: var(--accent-gold); text-decoration: underline;">Read all notes on Substack →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stack Section -->
+        <section id="stack" class="podcast-section" style="background: var(--bg-primary);">
+            <div class="podcast-container">
+                <div style="display: grid; gap: 3rem; align-items: center;">
+                    <div style="max-width: 40rem;">
+                        <div style="display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 1.5rem; color: var(--accent-gold);">
+                            <span>💻</span>
+                            <span style="font-family: var(--font-body); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em;">Production Pipeline</span>
+                        </div>
+                        <h2 class="podcast-section-title">The Stack</h2>
+                        <p style="color: rgba(232, 232, 232, 0.6); font-size: 1.125rem; line-height: 1.6; margin-bottom: 2rem;">
+                            We don't just talk; we build. The production pipeline leverages procedural generation and code-based animation to visualize complex ideas with mathematical precision.
+                        </p>
+
+                        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                                <div style="padding: 0.5rem; background: rgba(255, 255, 255, 0.05); border-radius: 8px; color: var(--accent-gold);">🎬</div>
+                                <div>
+                                    <h4 style="font-weight: 700; color: var(--text-primary);">Premiere Pro</h4>
+                                    <p style="font-size: 0.875rem; color: rgba(232, 232, 232, 0.6);">Main Assembly & MOGRTS</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                                <div style="padding: 0.5rem; background: rgba(255, 255, 255, 0.05); border-radius: 8px; color: var(--accent-gold);">📊</div>
+                                <div>
+                                    <h4 style="font-weight: 700; color: var(--text-primary);">Cavalry</h4>
+                                    <p style="font-size: 0.875rem; color: rgba(232, 232, 232, 0.6);">Procedural Motion & Data Charts</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                                <div style="padding: 0.5rem; background: rgba(255, 255, 255, 0.05); border-radius: 8px; color: var(--accent-gold);">💻</div>
+                                <div>
+                                    <h4 style="font-weight: 700; color: var(--text-primary);">Manim (Python)</h4>
+                                    <p style="font-size: 0.875rem; color: rgba(232, 232, 232, 0.6);">Math Plots & Timeline Builds</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Terminal Visual -->
+                    <div class="stack-terminal">
+                        <div class="stack-terminal-header">
+                            <div class="stack-terminal-dots">
+                                <div class="stack-terminal-dot stack-terminal-dot-red"></div>
+                                <div class="stack-terminal-dot stack-terminal-dot-yellow"></div>
+                                <div class="stack-terminal-dot stack-terminal-dot-green"></div>
+                            </div>
+                            <div class="stack-terminal-title">workflow_v01.json</div>
+                        </div>
+                        <div class="stack-terminal-body">
+                            <div class="stack-code-line">
+                                <span class="stack-line-number">1</span>
+                                <span><span style="color: #A78BFA;">import</span> <span style="color: #fff;">Manim</span> <span style="color: #A78BFA;">as</span> <span style="color: #fff;">mn</span></span>
+                            </div>
+                            <div class="stack-code-line">
+                                <span class="stack-line-number">2</span>
+                                <span><span style="color: #A78BFA;">class</span> <span style="color: #FCD34D;">MediaAutopsy</span>(<span style="color: #fff;">mn.Scene</span>):</span>
+                            </div>
+                            <div class="stack-code-line">
+                                <span class="stack-line-number">3</span>
+                                <span style="margin-left: 1rem;"><span style="color: #A78BFA;">def</span> <span style="color: #60A5FA;">construct</span>(<span style="color: #FB923C;">self</span>):</span>
+                            </div>
+                            <div class="stack-code-line">
+                                <span class="stack-line-number">4</span>
+                                <span style="margin-left: 2rem; color: #6B7280;"># Generate procedural rhetoric viz</span>
+                            </div>
+                            <div class="stack-code-line">
+                                <span class="stack-line-number">5</span>
+                                <span style="margin-left: 2rem;">claim = <span style="color: #34D399;">"Authenticity"</span></span>
+                            </div>
+                            <div class="stack-code-line">
+                                <span class="stack-line-number">6</span>
+                                <span style="margin-left: 2rem;">self.play(Write(claim), run_time=<span style="color: #FB923C;">2.5</span>)</span>
+                            </div>
+                            <div class="stack-code-line">
+                                <span class="stack-line-number">7</span>
+                                <span style="margin-left: 2rem; color: var(--accent-gold); animation: pulse 1.5s ease-in-out infinite;">_</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section id="philosophy" class="philosophy-section">
+            <div class="philosophy-watermark">JTBD</div>
+            <div class="podcast-container">
+                <div class="philosophy-grid">
+                    <div>
+                        <h2 class="podcast-section-title">Philosophy</h2>
+                        <div class="philosophy-sidebar">
+                            <div class="philosophy-sidebar-item">
+                                <h4 class="philosophy-sidebar-title">The Problem</h4>
+                                <p class="philosophy-sidebar-text">Short-form fatigue. Weak meta-analysis. Lack of actionable rhetorical tools.</p>
+                            </div>
+                            <div class="philosophy-sidebar-item">
+                                <h4 class="philosophy-sidebar-title">The Goal</h4>
+                                <p class="philosophy-sidebar-text">To recognize media's influence, apply techniques in teaching, and engage critically.</p>
+                            </div>
+                            <div class="philosophy-sidebar-item">
+                                <h4 class="philosophy-sidebar-title">The Values</h4>
+                                <p class="philosophy-sidebar-text">Depth. Authenticity (Minimal Edit). Balance (Critique + Praise).</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="philosophy-cards">
+                        <!-- Card 1 -->
+                        <div class="spotlight-card" style="padding: 2rem; display: flex; align-items: flex-start; gap: 1.5rem; border-radius: 16px;">
+                            <div class="philosophy-card-icon">📈</div>
+                            <div>
+                                <span style="font-size: 0.75rem; font-family: var(--font-body); color: rgba(232, 232, 232, 0.5); text-transform: uppercase; letter-spacing: 0.15em;">Situation</span>
+                                <h3 style="font-size: 1.25rem; font-weight: 500; margin-top: 0.25rem; color: var(--text-primary);">When I watch cultural content...</h3>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="spotlight-card" style="padding: 2rem; display: flex; align-items: flex-start; gap: 1.5rem; border-radius: 16px;">
+                            <div class="philosophy-card-icon">🔍</div>
+                            <div>
+                                <span style="font-size: 0.75rem; font-family: var(--font-body); color: rgba(232, 232, 232, 0.5); text-transform: uppercase; letter-spacing: 0.15em;">Motivation</span>
+                                <h3 style="font-size: 1.25rem; font-weight: 500; margin-top: 0.25rem; color: var(--text-primary);">I want to understand the rhetorical devices, hooks, and delivery techniques...</h3>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="spotlight-card philosophy-card-highlight" style="padding: 2rem; display: flex; align-items: flex-start; gap: 1.5rem; border-radius: 16px;">
+                            <div class="philosophy-card-icon philosophy-card-icon-highlight">⚡</div>
+                            <div>
+                                <span style="font-size: 0.75rem; font-family: var(--font-body); color: var(--accent-gold); text-transform: uppercase; letter-spacing: 0.15em;">Outcome</span>
+                                <h3 style="font-size: 1.25rem; font-weight: 500; margin-top: 0.25rem; color: var(--text-primary);">So I can apply them in my own speaking and engage more critically.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="podcast-footer">
+            <div class="podcast-footer-grid">
+                <div>
+                    <a href="#" class="podcast-footer-logo">
+                        <span class="podcast-footer-logo-icon">ZP</span>
+                        Ze Podcast
+                    </a>
+                    <p class="podcast-footer-description">
+                        Dissecting media, one frame at a time. Built for students, creators, and critical thinkers in Florida and beyond.
+                    </p>
+                </div>
+
+                <div class="podcast-footer-links">
+                    <div class="podcast-footer-column">
+                        <h4 class="podcast-footer-column-title">Portfolio</h4>
+                        <a href="index.html" class="podcast-footer-link">Home</a>
+                        <a href="research.html" class="podcast-footer-link">Research</a>
+                        <a href="music.html" class="podcast-footer-link">Music</a>
+                        <a href="tech.html" class="podcast-footer-link">Tech</a>
+                    </div>
+                    <div class="podcast-footer-column">
+                        <h4 class="podcast-footer-column-title">Podcast</h4>
+                        <a href="#episodes" class="podcast-footer-link">Episodes</a>
+                        <a href="#notebook" class="podcast-footer-link">Notebook</a>
+                        <a href="#stack" class="podcast-footer-link">Stack</a>
+                    </div>
+                    <div class="podcast-footer-column">
+                        <h4 class="podcast-footer-column-title">Connect</h4>
+                        <a href="https://www.youtube.com/@zakih.8815" class="podcast-footer-link">▶ YouTube</a>
+                        <a href="https://scilent.substack.com/" class="podcast-footer-link">📖 Substack</a>
+                        <a href="contact.html" class="podcast-footer-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="podcast-footer-bottom">
+                <span>&copy; 2025 Ze Podcast. All rights reserved.</span>
+                <span>Designed with ♥ in Florida.</span>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Spotlight effect script (from components.js) -->
+    <script>
+        // Spotlight card effect
+        const spotlightCards = document.querySelectorAll('.spotlight-card');
+
+        spotlightCards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+    </script>
+
+    <!-- Main portfolio JavaScript (navigation, mobile menu) -->
+    <script src="js/main.js"></script>
+</body>
+</html>

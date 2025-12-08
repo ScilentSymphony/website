@@ -1,4 +1,0 @@
----
-title: Thesis
-layout: single
----

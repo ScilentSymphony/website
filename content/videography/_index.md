@@ -1,4 +1,0 @@
----
-title: Videography
-layout: single
----
