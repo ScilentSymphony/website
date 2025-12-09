@@ -1,11 +1,11 @@
 # Robots.txt for Zaki's Portfolio
-# https://scilentsymphony.github.io/portfolio/
+# https://aspendan.ee/
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://scilentsymphony.github.io/portfolio/sitemap.xml
+Sitemap: https://aspendan.ee/sitemap.xml
 
 # Disallow template files
 Disallow: /knowledge/post-template.html
