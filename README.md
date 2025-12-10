@@ -6,7 +6,7 @@ Built with Claude Code.
 
 ## 🌐 Live Site
 
-[scilentsymphony.github.io/portfolio](https://scilentsymphony.github.io/portfolio)
+[https://aspendan.ee/](https://aspendan.ee/)
 
 ## 🎯 Features
 
@@ -70,7 +70,7 @@ portfolio/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ScilentSymphony/portfolio.git
+   git clone https://github.com/ScilentSymphony/website.git
    cd portfolio
    ```
 
